@@ -1,14 +1,10 @@
 def format_score(score):
     """
     Format football scores.
-    Handles:
-    - Normal Time
-    - Extra Time
-    - Penalties
     """
 
     if not score:
-        return "Upcoming Match"
+        return "Upcoming"
 
     ft = score.get("ft", [0, 0])
 
